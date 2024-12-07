@@ -1,0 +1,143 @@
+<div class="container">
+
+  <div class="left">
+    <img class="logo" src="../../assets/bubblychat.png" alt="ad" />
+    <div class="searchbar">
+    <input class="search" type="text">
+    <img class="logo" src="../../assets/src.png" alt="ad" />
+  </div>
+  <div class="frnd">
+
+    <h1>FRIEND'S</h1>
+  </div>
+
+  <div class="frnds">
+  <div class="user" *ngFor="let user of Allusers"> 
+    <img class="userImg" src={{user.image}} alt="user">
+    <h2 class="userName">{{user.name}}</h2>
+  
+  </div>
+</div>
+
+
+
+
+
+  </div>
+  <div class="center">
+
+
+    <nav>
+    
+  <div class="button-container">
+      <button class="button">
+   
+          <img width="21" src="../../assets/home.png" alt="">
+     
+      </button>
+      <button class="button">
+        <img width="21" src="../../assets/addfrd.png" alt="">
+      </button>
+      <button class="button">
+        <img width="21" src="../../assets/setting.png" alt="">
+      </button>
+     
+
+      <button class="button">
+    
+          <img width="29" src="../../assets/like.png" alt="">
+        </button>
+     
+    </div>
+    </nav>
+    <div class="allStory">
+    <div class="story" *ngFor="let story of stories">
+      <div class="storyBorder">
+        <img src={{story.image}} alt="">
+      </div>
+    </div>
+  </div>
+
+<!-- ::::::::::::::::::::::::::::::::::::::::::::: -->
+
+<div class="post">
+
+<div class="postCard" *ngFor="let post of posts">
+
+  <img class="imgPost" src={{post.image}} alt="">
+  <div class="postDsc">
+    <h1>{{post.name}}</h1>
+    <h3>{{athe}}{{post.username}}</h3>
+    <h4>{{post.date}}</h4>
+    <p>{{post.bio}}</p>
+
+    <div class="likeCmt">
+     
+      <button class="like">
+        <svg
+          class="empty"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="32"
+          height="32"
+        >
+          <path fill="none" d="M0 0H24V24H0z"></path>
+          <path
+            d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2zm-3.566 15.604c.881-.556 1.676-1.109 2.42-1.701C18.335 14.533 20 11.943 20 9c0-2.36-1.537-4-3.5-4-1.076 0-2.24.57-3.086 1.414L12 7.828l-1.414-1.414C9.74 5.57 8.576 5 7.5 5 5.56 5 4 6.656 4 9c0 2.944 1.666 5.533 4.645 7.903.745.592 1.54 1.145 2.421 1.7.299.189.595.37.934.572.339-.202.635-.383.934-.571z"
+          ></path>
+        </svg>
+        <svg
+          class="filled"
+          height="32"
+          width="32"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M0 0H24V24H0z" fill="none"></path>
+          <path
+            d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5C9.5 20 2 16 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2z"
+          ></path>
+        </svg>
+       32
+      </button>
+      <button class="cmtBtn">
+        <img width="30px" height="30px" src="../../assets/cmnt.png"/> <h3>Comment</h3>
+      </button>
+      
+    </div>
+  </div>
+
+
+
+</div>
+</div>
+
+
+
+
+</div>
+  <div class="right">
+
+    <div class="profileSection">
+      <img src="../../assets/profile.jpg" alt="profile">
+      <h1>Shagun Thakur</h1>
+      <h2 routerLink="/profile">{{athe}}Shagun09</h2>
+    </div>
+
+
+
+ 
+
+  <div class="notification">
+    <h1>NOTIFICATION'S</h1>
+    <div class="h3" *ngFor="let cmnt of notif">
+      <img src="../../assets/noti.png" alt="">
+    <h3 >
+     
+      {{athe}}{{cmnt}}
+   </h3>
+  </div>
+  </div>
+
+</div>
+</div>

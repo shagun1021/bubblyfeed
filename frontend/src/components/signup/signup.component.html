@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="box">
+    <img class="logo" src="../../assets/bubblychat.png" alt="ad" />
+  
+  <div class="input">
+    <form [formGroup]="userForm">
+    <input type="mail"   formControlName="Email" placeholder="Email">
+    <input type="text"  formControlName="password" placeholder="Password">
+    <input type="text"   formControlName="name" placeholder="Full Name">
+    <input type="text"  formControlName="name" placeholder="Username">
+    <button class="btn" routerLink="/dashboard">
+    <app-btn [name]="'Signup'"></app-btn>
+  </button>
+
+  <div class="mybtn">
+    <img  class="google" src="../../assets/google.png" alt="">
+    Signup with Google
+  </div>
+  <div class="noacc">
+    <h3>Already have an Account?</h3>
+    <span routerLink="/">Login</span>
+  </div>
+</form>
+  </div>
+</div>
+</div>

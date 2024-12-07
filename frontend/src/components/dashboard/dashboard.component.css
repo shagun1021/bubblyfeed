@@ -1,0 +1,429 @@
+.container{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  user-select: none;
+
+}
+
+.left{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.logo{
+  width: 150px;
+  height: 120px;
+  margin-top: 30px;
+}
+
+.search{
+  width: 300px;
+  margin-top: 10px;
+  height: 50px;
+  border-radius: 10px;
+  border:3px solid black;
+  padding: 5px;
+  padding-left: 10px;
+  font-size: 25px;
+  padding-right: 50px;
+}
+
+.right{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+.center{
+  width: 40%;
+  height: 100%;
+flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.searchbar{
+  display: flex;
+  align-items: center;
+}
+
+.searchbar img{
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top:135px;
+  left:330px;
+  cursor: pointer;
+}
+
+.frnd{
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.user{
+  display: flex;
+  align-items: center;
+  gap:15px
+}
+.userImg{
+  border-radius: 100%;
+  cursor: pointer;
+  width:100px
+}
+.userName{
+  cursor: pointer;
+
+}
+
+.frnds{
+  width:100%  ;
+  height: 425px;
+  overflow: scroll;
+
+  scroll-behavior: smooth;
+  scrollbar-width: none; 
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 14%;
+  gap:15px;
+  padding-top: 220px;
+  padding-bottom: 40px;
+  overflow-x: hidden;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+/* From Uiverse.io by akshat-patel28 */ 
+.button-container {
+  display: flex;
+  background-color: #DB7093;
+  width: 400px;
+  height: 50px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px,
+        rgba(245, 73, 144, 0.5) 5px 10px 15px;
+}
+
+.button {
+  outline: 0 !important;
+  border: 0 !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  transition: all ease-in-out 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+}
+
+.icon {
+  font-size: 20px;
+}
+
+.story{
+  height: 100%;
+display: flex;
+align-items: center;
+margin-top: 10px;
+
+}
+
+.allStory{
+  display: flex;
+  width:100%;
+  gap:9px;
+  /* overflow-x: scroll; */
+  padding-left: 30px;
+padding-right: 30px;
+scroll-behavior: smooth;
+scrollbar-width: none; 
+
+height: 130px ;
+
+}
+
+.storyBorder{
+  width: 100px;
+  background: linear-gradient(to right, #DB7093, #4e4376);
+  border-radius: 100%;
+  padding: 5px;
+  cursor: pointer;
+height: 100px;
+
+}
+
+.storyBorder img{
+width: 100%;
+height:100%;
+border-radius: 100%;
+
+}
+
+.post{
+  width: 100%;
+  max-height: 80%;
+  padding: 30px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none; 
+  
+  margin-top: 20px;
+  margin-bottom: 10px;
+  overflow-x: hidden;
+}
+
+.postCard{
+  width:100%;
+  height:80%;
+  border :1px solid white;
+  border-radius: 30px;
+  box-shadow: 8px 9px 10px gray;
+  padding: 30px;
+  display: flex;
+  margin-bottom: 30px;
+
+}
+
+.likeCmt{
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+ 
+  align-items: center;
+  width: 280px;
+
+
+}
+
+
+/* 
+.postCard img{
+  width:50%;
+  height: 100%;
+} */
+
+.postDsc{
+width: 60%;
+
+display: flex;
+flex-direction: column;
+
+align-items: center;
+
+}
+
+.postDsc h4{
+  color:rgb(109, 106, 106)
+}
+.postDsc p{
+  padding: 8px;
+  padding-left: 15px;
+}
+
+/* :::::::::::::::::::::::::; */
+/* From Uiverse.io by LilaRest */ 
+
+.like {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 25px 20px 22px;
+  box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+ 
+  border-color: #fbd3e9;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 35px;
+  font-size: 25px;
+  cursor: pointer;
+  font-weight: 900;
+  color: black;
+ width: 60%;
+ height: 20px;
+  transition:
+    transform 400ms cubic-bezier(0.68, -0.55, 0.27, 2.5),
+    border-color 400ms ease-in-out,
+    background-color 400ms ease-in-out;
+  word-spacing: -2px;
+}
+.cmtBtn{
+  border: 3px solid #DB7093;
+  padding: 10px;
+  border-radius: 35px;
+  cursor: pointer;
+  width: 60%;
+  height: 40px;
+  margin-left:16px;
+  text-align: center;
+  margin-top: -15px;
+
+  align-items: center ;
+  display: flex;
+  justify-content: center;
+  gap:9px
+
+}
+.like:hover{
+  border-color: #DB7093;
+  border-style: solid;
+  border-width: 3px;
+}
+
+.imgPost{
+  width: 50%;
+}
+
+.like:hover {
+  background-color: #eee;
+  transform: scale(105%);
+  animation: movingBorders 3s infinite;
+}
+
+.like svg {
+  margin-right: 11px;
+  fill: #DB7093;
+  transition: opacity 100ms ease-in-out;
+}
+
+.filled {
+  position: absolute;
+  opacity: 0;
+  top: 3px;
+  left:50px;
+}
+
+@keyframes beatingHeart {
+  0% {
+    transform: scale(1);
+  }
+
+  15% {
+    transform: scale(1.15);
+  }
+
+  30% {
+    transform: scale(1);
+  }
+
+  45% {
+    transform: scale(1.15);
+  }
+
+  60% {
+    transform: scale(1);
+  }
+}
+
+button:hover .empty {
+  opacity: 0;
+}
+
+button:hover .filled {
+  opacity: 1;
+  animation: beatingHeart 1.2s infinite;
+}
+
+.profileSection{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  user-select: none;
+  text-align: center;
+}
+
+.profileSection img{
+  width:200px;
+  height: 200px;
+  border-radius: 100%;
+  cursor: pointer;
+  transition-duration: 0.3s;
+ 
+  
+}
+
+.profileSection h1,h2{
+  cursor: pointer;
+  user-select: none;
+  
+}
+
+.profileSection h2:hover{
+  text-decoration: underline;
+
+}
+.profileSection img:hover{
+  transform: scale(1.2,1.1);
+  border:4px solid black
+  
+}
+
+
+.notification{
+  margin: 15px;
+  display: flex;
+  gap:10px;
+  flex-direction: column;
+  text-align: center;
+  width:80%;
+  height:80%;
+  border :1px solid white;
+  border-radius: 30px;
+  box-shadow: 4px 6px 16px rgb(197, 195, 195),
+                -4px -3px 16px rgb(197, 195, 195);
+  padding: 30px;
+  display: flex;
+  overflow: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none; 
+
+  
+}
+
+.notification .h3{
+  display: flex;
+  border-bottom: 1px solid rgb(210, 209, 209);
+  box-shadow: 2px 2px 2px rgb(210, 209, 209) ;
+  padding-bottom: 3px;
+  border-radius: 100px;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+.h3 img{
+  max-width:30px;
+  max-height: 20px;
+}
+.notification .h3:hover{
+text-decoration: underline;
+transform: scale(1.1,1.10);
+}
